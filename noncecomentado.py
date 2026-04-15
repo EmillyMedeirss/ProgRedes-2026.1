@@ -1,7 +1,7 @@
 import hashlib
 
 
-entrada_bytes = 'travessia'.encode('utf-8') #pega a string "travessia" e transforma em bytes
+entrada_bytes = input ('').encode('utf-8') #pega a string "travessia" e transforma em bytes
 
 bits_zero = 5 #define com quantos bits em zero o hash começa
 

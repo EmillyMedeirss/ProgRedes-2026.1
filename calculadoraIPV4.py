@@ -1,12 +1,12 @@
-ipv4 = '192.168.1.10'.split('.') 
-ip_int = []
+ipv4 = input('Digite um número IPv4 (quatro valores entre 0 e 255, separados por .) : ').split('.')
+prefixo = int(input('Digite uma máscara de rede (um número entre 2 e 32): '))
 
+
+ip_int = []
 for i  in ipv4:
      ip_int.append(int(i)) 
 
-prefixo = 24
 mask_int = []
-
 mask_bin = ((1 << prefixo) - 1) << (32 - prefixo) 
 
 mask_bin = mask_bin & 0xFFFFFFFF 
