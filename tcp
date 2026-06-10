@@ -11,6 +11,9 @@ data = my_sock.recv(4096)
 pos2NL = data.find(b"\r\n\r\n")
 headers = data[:pos2NL].split(b'\r\n')
 
+for header in headers:
+    print(header)
+
 is_chunked = False
 
 len_data = -1
